@@ -23,6 +23,7 @@ This repository contains my **notes and JavaScript implementations** from a Data
 - **`notes/`** – My explanations for each topic.
 - **`implementations/`** – JavaScript implementations.
 - **`leet-code-practice/`** – Extra problems I solved beyond the course.
+- **`course-practice/`** – Practice tasks provided by the course.
 
 ---
 
