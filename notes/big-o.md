@@ -161,6 +161,8 @@ permutations(["A", "B", "C"]); // Outputs all possible orderings
 
 ---
 
+
+
 ## 📝 Summary
 
 | Complexity | Performance | Example |
@@ -170,7 +172,12 @@ permutations(["A", "B", "C"]); // Outputs all possible orderings
 | O(n)       | 🔄 Average | Looping through an array |
 | O(n log n) | 🟡 Slower | Quick Sort, Merge Sort |
 | O(n²)      | 🚨 Slow | Nested loops |
-| O(2ⁿ)      | ❌ Very slow | Recursive Fibonacci |
+| O(n³)      | 🛑 Very slow | Triple nested loops |
+| O(2ⁿ)      | ❌ Extremely slow | Recursive Fibonacci |
+| O(n!)      | 🔥 Impractical | Brute-force permutations (TSP) |
+
+
+
 
 ---
 
