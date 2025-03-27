@@ -21,6 +21,20 @@ class CustomArray {
         return this.#data[index];
     }
 
+    pop() {
+        if (this.#length < 1) {
+            throw new Error('Can not pop from an empty array.');
+        }
+
+        const poppedElement = this.#data[this.#length - 1];
+
+        delete this.#data[this.#length - 1];
+
+        this.#length--;
+
+        return poppedElement;
+    }
+
     toString() {
         if (this.#length < 1) {
             return 'Array is empty.'
