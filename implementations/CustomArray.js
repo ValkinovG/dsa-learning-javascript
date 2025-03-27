@@ -58,7 +58,7 @@ class CustomArray {
 
     unshift(element) {
         for (let i = this.length - 1; i >= 0; i--) {
-            this.#data[i+1] = this.#data[i];
+            this.#data[i + 1] = this.#data[i];
         }
 
         this.#data[0] = element;
@@ -66,6 +66,24 @@ class CustomArray {
         this.#length++;
 
         return this.#length;
+    }
+
+    deleteByIndex(index) {
+        if (index < 0 || index >= this.length) {
+            throw new Error('Index is out of bounds.');
+        }
+
+        const deletedElement = this.#data[index];
+
+        for (let i = index; i < this.length - 1; i++) {
+            this.#data[i] = this.#data[i + 1];
+        }
+
+        delete this.#data[this.#length - 1];
+
+        this.#length--;
+
+        return deletedElement;
     }
 
     toString() {
