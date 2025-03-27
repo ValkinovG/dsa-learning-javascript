@@ -8,4 +8,11 @@ class CustomArray {
         this.#data = {};
     }
 
+    get length() {
+        return this.#length;
+    }
+
+    get data() {
+        return { ...this.#data };
+    }
 }
