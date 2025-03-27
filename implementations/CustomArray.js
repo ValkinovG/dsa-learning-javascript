@@ -8,6 +8,11 @@ class CustomArray {
         this.#data = {};
     }
 
+    push(element) {
+        this.#data[this.length] = element;
+        this.#length++;
+    }
+
     toString() {
         if (this.#length < 1) {
             return 'Array is empty.'
