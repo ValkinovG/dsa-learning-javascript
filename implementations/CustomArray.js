@@ -35,6 +35,24 @@ class CustomArray {
         return poppedElement;
     }
 
+    shift() {
+        if (this.#length < 1) {
+            throw new Error('Can not shift from an empty array.');
+        }
+
+        const shiftedElement = this.#data[0];
+
+        for (let i = 0; i < this.#length - 1; i++) {
+            this.#data[i] = this.#data[i + 1];
+        }
+
+        delete this.#data[this.#length - 1];
+
+        this.#length--;
+
+        return shiftedElement;
+    }
+
     toString() {
         if (this.#length < 1) {
             return 'Array is empty.'
