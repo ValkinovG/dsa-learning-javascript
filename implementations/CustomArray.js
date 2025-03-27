@@ -53,6 +53,18 @@ class CustomArray {
         return shiftedElement;
     }
 
+    unshift(element) {
+        for (let i = this.length - 1; i >= 0; i--) {
+            this.#data[i+1] = this.#data[i];
+        }
+
+        this.#data[0] = element;
+
+        this.#length++;
+
+        return this.#length;
+    }
+
     toString() {
         if (this.#length < 1) {
             return 'Array is empty.'
