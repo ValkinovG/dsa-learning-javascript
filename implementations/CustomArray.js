@@ -10,7 +10,10 @@ class CustomArray {
 
     push(element) {
         this.#data[this.length] = element;
+
         this.#length++;
+
+        return this.#length;
     }
 
     get(index) {
