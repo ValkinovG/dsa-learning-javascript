@@ -86,18 +86,22 @@ class CustomArray {
         return deletedElement;
     }
 
-    indexOf(element, fromIndex = 0){
-        if(fromIndex < 0 || fromIndex >= this.#length){
+    indexOf(element, fromIndex = 0) {
+        if (fromIndex < 0 || fromIndex >= this.#length) {
             throw new Error('Provided index is out of bounds.')
         }
 
-        for(let i=fromIndex; i<this.#length; i++){
-            if(this.#data[i] === element){
+        for (let i = fromIndex; i < this.#length; i++) {
+            if (this.#data[i] === element) {
                 return i;
             }
         }
 
         return -1
+    }
+
+    includes(element) {
+        return this.indexOf(element) !== -1;
     }
 
     toString() {
