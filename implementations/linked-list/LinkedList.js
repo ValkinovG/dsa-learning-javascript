@@ -66,6 +66,27 @@ class LinkedList {
         this.#length++;
     }
 
+    shift() {
+        if (this.#length === 0) {
+            throw new Error('Can not shift from an empty list.');
+        }
+
+        const returnNode = this.#head;
+
+        if (this.#length === 1) {
+            this.#head = null;
+            this.#tail = null;
+            this.#length--;
+            return returnNode;
+        }
+
+        this.#head = this.#head.next;
+        this.#length--;
+
+        returnNode.next = null;
+        return returnNode;
+    }
+
     toArray() {
         const values = [];
         let current = this.#head;
