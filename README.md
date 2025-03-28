@@ -11,11 +11,23 @@ This repository contains my **notes and JavaScript implementations** from a Data
 ---
 
 ## 📖 Topics Covered
-- [🔁 Recursion](notes/recursion.md)
-- [🌲 Trees](notes/trees.md)
-- [🔗 Graphs](notes/graphs.md)
-- [📊 Sorting Algorithms](notes/sorting.md)
-- [🔍 Searching Algorithms](notes/searching.md)
+- 📦 [Custom Array Class](notes/custom-array.md)  
+  ↳ [View Implementation](implementations/CustomArray.js)
+- 📚 [JavaScript Arrays](notes/array.md)
+- ⏱ [Big O Notation](notes/big-o.md)
+
+---
+
+### 🛠 Coming Soon
+- 🔗 Linked List
+- 🔗 Doubly Linked List
+- 📥 Stack
+- 📤 Queue
+- 🔁 Recursion
+- 🌲 Trees
+- 🧭 Graphs
+- 📊 Sorting Algorithms
+- 🔍 Searching Algorithms
 
 ---
 
@@ -28,11 +40,20 @@ This repository contains my **notes and JavaScript implementations** from a Data
 ---
 
 ## ✅ Progress Tracking
+_(My learning checklist – updated as I complete each topic)_
+
+- [x] Big O Notation
+- [x] JavaScript Arrays
+- [x] Custom Array
+- [ ] Linked List
+- [ ] Doubly Linked List
+- [ ] Stack
+- [ ] Queue
 - [ ] Recursion
 - [ ] Trees
 - [ ] Graphs
-- [ ] Sorting
-- [ ] Searching
+- [ ] Sorting Algorithms
+- [ ] Searching Algorithms
 
 ---
 
