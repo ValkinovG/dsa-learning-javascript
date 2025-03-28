@@ -1,5 +1,5 @@
 // Node class for singly linked list
-class Node {
+export class Node {
     constructor(value) {
         this.value = value;
         this.next = null;
