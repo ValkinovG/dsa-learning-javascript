@@ -52,6 +52,18 @@ class LinkedList {
         return returnNode;
     }
 
+    toArray() {
+        const values = [];
+        let current = this.#head;
+
+        while (current) {
+            values.push(current.value);
+            current = current.next;
+        }
+
+        return values;
+    }
+
     isEmpty() {
         return this.#length === 0;
     }
