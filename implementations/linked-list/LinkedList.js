@@ -25,6 +25,33 @@ class LinkedList {
         this.#length++;
     }
 
+    pop() {
+        if (this.#length === 0) {
+            throw new Error('Can not pop from an empty list.')
+        }
+
+        const returnNode = this.#tail;
+
+        if (this.#length === 1) {
+            this.#head = null;
+            this.#tail = null;
+            this.#length--;
+            return returnNode;
+        }
+
+        let tempNode = this.#head;
+        while (tempNode.next !== this.#tail) {
+            tempNode = tempNode.next;
+        }
+
+        tempNode.next = null;
+        this.#tail = tempNode;
+
+        this.#length--;
+
+        return returnNode;
+    }
+
     isEmpty() {
         return this.#length === 0;
     }
