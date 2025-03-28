@@ -3,21 +3,25 @@ class LinkedList {
     #tail;
     #length
 
-    constructor(){
+    constructor() {
         this.#head = null;
         this.#tail = null;
         this.#length = 0;
     }
 
-    get head(){
+    isEmpty() {
+        return this.#length === 0;
+    }
+
+    get head() {
         return this.#head;
     }
 
-    get tail(){
+    get tail() {
         return this.#tail;
     }
 
-    get length(){
+    get length() {
         return this.#length;
     }
 }
