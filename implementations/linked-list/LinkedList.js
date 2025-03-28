@@ -64,6 +64,18 @@ class LinkedList {
         return values;
     }
 
+    print() {
+        const values = [];
+        let current = this.#head;
+
+        while (current) {
+            values.push(current.value);
+            current = current.next;
+        }
+
+        console.log(`LinkedList [${values.join(' -> ')}]`);
+    }
+
     isEmpty() {
         return this.#length === 0;
     }
