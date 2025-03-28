@@ -100,6 +100,23 @@ class CustomArray {
         return -1
     }
 
+    reverse() {
+        let start = 0;
+        let end = this.#length - 1;
+        let until = Math.ceil(this.#length / 2);
+
+        for (let i = 0; i < until; i++) {
+            const tempStart = this.#data[start];
+            const tempEnd = this.#data[end];
+            this.#data[start] = tempEnd;
+            this.#data[end] = tempStart;
+            start++;
+            end--;
+        }
+
+        return this.data;
+    }
+
     includes(element) {
         return this.indexOf(element) !== -1;
     }
