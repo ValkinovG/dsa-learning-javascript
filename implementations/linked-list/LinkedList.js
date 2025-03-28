@@ -95,6 +95,20 @@ class LinkedList {
         return this.#tail;
     }
 
+    get(index) {
+        if (index < 0 || index >= this.#length) {
+            throw new Error('Index is out of bounds.')
+        }
+
+        let tempNode = this.#head;
+
+        for (let i = 0; i < index; i++) {
+            tempNode = tempNode.next;
+        }
+
+        return tempNode;
+    }
+
     toArray() {
         const values = [];
         let current = this.#head;
