@@ -87,6 +87,14 @@ class LinkedList {
         return returnNode;
     }
 
+    getFirst() {
+        return this.#head;
+    }
+
+    getLast() {
+        return this.#tail;
+    }
+
     toArray() {
         const values = [];
         let current = this.#head;
