@@ -1,3 +1,5 @@
+import { Node } from "./node.js";
+
 class LinkedList {
     #head;
     #tail;
@@ -7,6 +9,20 @@ class LinkedList {
         this.#head = null;
         this.#tail = null;
         this.#length = 0;
+    }
+
+    push(value) {
+        const newNode = new Node(value);
+
+        if (this.#length === 0) {
+            this.#head = newNode;
+            this.#tail = newNode;
+        } else {
+            this.#tail.next = newNode;
+            this.#tail = newNode;
+        }
+
+        this.#length++;
     }
 
     isEmpty() {
