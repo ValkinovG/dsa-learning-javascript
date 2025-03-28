@@ -109,6 +109,16 @@ class LinkedList {
         return tempNode;
     }
 
+    set(index, value) {
+        try {
+            const node = this.get(index);
+            node.value = value;
+            return true;
+        } catch (err) {
+            return false;
+        }
+    }
+
     toArray() {
         const values = [];
         let current = this.#head;
