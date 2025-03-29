@@ -30,4 +30,8 @@ class Stack {
     isEmpty() {
         return this.#list.isEmpty();
     }
+
+    size() {
+        return this.#list.size();
+    }
 }
