@@ -208,6 +208,19 @@ class DoublyLinkedList {
         return null;
     }
 
+    indexOf(value) {
+        let temp = this.#head;
+
+        for (let i = 0; i < this.#length; i++) {
+            if (temp.value === value) {
+                return i;
+            }
+            temp = temp.next;
+        }
+
+        return -1;
+    }
+
     getFirst() {
         return this.#head;
     }
