@@ -18,4 +18,12 @@ class Stack {
 
         return this.#list.pop().value;
     }
+
+    peek() {
+        if (this.#list.isEmpty()) {
+            throw new Error('Can not peek from an empty Stack.')
+        }
+
+        return this.#list.getLast().value;
+    }
 }
