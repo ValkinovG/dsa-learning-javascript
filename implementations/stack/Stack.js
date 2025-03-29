@@ -38,4 +38,16 @@ class Stack {
     clear() {
         this.#list.clear();
     }
+
+    print() {
+        const values = [];
+        let current = this.#list.getLast();
+
+        while (current) {
+            values.push(current.value);
+            current = current.prev;
+        }
+
+        console.log(`Stack (top → bottom): [${values.join(' -> ')}]`);
+    }
 }
