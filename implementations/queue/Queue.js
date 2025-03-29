@@ -19,4 +19,12 @@ export class Queue {
 
         return this.#list.shift().value;
     }
+
+    peek() {
+        if (this.#list.isEmpty()) {
+            throw new Error('Can not peek from an empty Queue.')
+        }
+
+        return this.#list.getFirst().value;
+    }
 }
