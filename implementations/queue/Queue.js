@@ -7,4 +7,8 @@ export class Queue {
     constructor() {
         this.#list = new DoublyLinkedList();
     }
+
+    enqueue(value) {
+        this.#list.push(value);
+    }
 }
