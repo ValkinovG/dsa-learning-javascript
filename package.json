@@ -1,0 +1,13 @@
+{
+  "name": "dsa-learning-javascript",
+  "version": "1.0.0",
+  "description": "My personal learning repo for mastering Data Structures & Algorithms (DSA) in JavaScript. Inspired by HuXn WebDev's YouTube course.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Genko Valkinov",
+  "license": "MIT"
+}
