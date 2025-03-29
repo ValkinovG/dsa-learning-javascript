@@ -233,6 +233,16 @@ class DoublyLinkedList {
         return arr;
     }
 
+    static fromArray(arr) {
+        const list = new DoublyLinkedList();
+
+        for (let i = 0; i < arr.length; i++) {
+            list.push(arr[i]);
+        }
+
+        return list;
+    }
+
     getFirst() {
         return this.#head;
     }
