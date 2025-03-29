@@ -26,6 +26,18 @@ class DoublyLinkedList {
         this.#length++;
     }
 
+    getFirst() {
+        return this.#head;
+    }
+
+    getLast() {
+        return this.#tail;
+    }
+
+    size() {
+        return this.#length;
+    }
+
     get head() {
         return this.#head;
     }
