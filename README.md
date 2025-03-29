@@ -20,11 +20,12 @@ This repository is my personal learning space for mastering **Data Structures & 
   ↳ [View Implementation](implementations/linked-list/LinkedList.js)
 - 🔗 [Doubly Linked List](notes/doubly-linked-list.md)  
   ↳ [View Implementation](implementations/doubly-linked-list/DoublyLinkedList.js)
+- 📥 [Stack](notes/stack.md)  
+  ↳ [View Implementation](implementations/stack/Stack.js)
 
 ---
 
 ### 🛠 Coming Soon
-- 📥 Stack
 - 📤 Queue
 - 🔁 Recursion
 - 🌲 Trees
@@ -50,7 +51,7 @@ _(My learning checklist – updated as I complete each topic)_
 - [x] Custom Array
 - [x] Singly Linked List
 - [x] Doubly Linked List
-- [ ] Stack
+- [x] Stack
 - [ ] Queue
 - [ ] Recursion
 - [ ] Trees
