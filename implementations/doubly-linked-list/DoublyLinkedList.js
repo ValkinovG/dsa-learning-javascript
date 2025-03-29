@@ -1,6 +1,6 @@
 import { DoublyNode } from "./DoublyNode.js";
 
-class DoublyLinkedList {
+export class DoublyLinkedList {
     #head;
     #tail;
     #length;

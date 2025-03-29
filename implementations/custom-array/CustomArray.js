@@ -1,4 +1,4 @@
-class CustomArray {
+export class CustomArray {
 
     #length;
     #data;
