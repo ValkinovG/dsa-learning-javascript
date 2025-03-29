@@ -64,6 +64,29 @@ class DoublyLinkedList {
         this.#length++;
     }
 
+    shift() {
+        if (this.#length === 0) {
+            throw new Error('Can not shift from an empty list.');
+        }
+
+        const removedNode = this.#head;
+
+        if (this.#length === 1) {
+            this.#head = null;
+            this.#tail = null;
+            this.#length = 0;
+            return removedNode;
+        }
+
+        this.#head = this.#head.next;
+        this.#head.prev = null;
+        removedNode.next = null;
+
+        this.#length--;
+
+        return removedNode;
+    }
+
     getFirst() {
         return this.#head;
     }
