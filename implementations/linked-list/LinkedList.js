@@ -144,6 +144,29 @@ class LinkedList {
         return true;
     }
 
+    remove(index) {
+        if (index < 0 || index >= this.#length) {
+            throw new Error('Index is out of bounds.')
+        }
+
+        if (index === 0) {
+            return this.shift();
+        }
+
+        if (index === this.#length - 1) {
+            return this.pop();
+        }
+
+        const prev = this.get(index - 1);
+        const removedNode = prev.next;
+
+        prev.next = prev.next.next;
+        removedNode.next = null;
+
+        this.#length--;
+
+        return removedNode;
+    }
 
     toArray() {
         const values = [];
