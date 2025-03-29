@@ -197,6 +197,10 @@ class LinkedList {
         this.#head = prev;
     }
 
+    size() {
+        return this.#length;
+    }
+
     toArray() {
         const values = [];
         let current = this.#head;
