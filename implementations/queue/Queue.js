@@ -27,4 +27,8 @@ export class Queue {
 
         return this.#list.getFirst().value;
     }
+
+    isEmpty() {
+        return this.#list.isEmpty();
+    }
 }
