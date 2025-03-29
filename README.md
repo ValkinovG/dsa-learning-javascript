@@ -20,13 +20,14 @@ This repository is my personal learning space for mastering **Data Structures & 
   ↳ [View Implementation](implementations/linked-list/LinkedList.js)
 - 🔗 [Doubly Linked List](notes/doubly-linked-list.md)  
   ↳ [View Implementation](implementations/doubly-linked-list/DoublyLinkedList.js)
-- 📥 [Stack](notes/stack.md)  
+- 🥞 [Stack](notes/stack.md)  
   ↳ [View Implementation](implementations/stack/Stack.js)
+- 🚶‍♂️ [Queue](notes/queue.md)  
+  ↳ [View Implementation](implementations/queue/Queue.js)
 
 ---
 
 ### 🛠 Coming Soon
-- 📤 Queue
 - 🔁 Recursion
 - 🌲 Trees
 - 🧭 Graphs
@@ -52,7 +53,7 @@ _(My learning checklist – updated as I complete each topic)_
 - [x] Singly Linked List
 - [x] Doubly Linked List
 - [x] Stack
-- [ ] Queue
+- [x] Queue
 - [ ] Recursion
 - [ ] Trees
 - [ ] Graphs
