@@ -168,6 +168,20 @@ class LinkedList {
         return removedNode;
     }
 
+    find(value) {
+        let tempNode = this.#head;
+
+        while (tempNode !== null) {
+            if (tempNode.value === value) {
+                return tempNode;
+            }
+
+            tempNode = tempNode.next;
+        }
+
+        return null;
+    }
+
     toArray() {
         const values = [];
         let current = this.#head;
