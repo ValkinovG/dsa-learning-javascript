@@ -15,9 +15,9 @@ This repository contains my **notes and JavaScript implementations** from a Data
 - 📚 [JavaScript Arrays](notes/array.md)
 - 📦 [Custom Array Class](notes/custom-array.md)  
   ↳ [View Implementation](implementations/CustomArray.js)
-- 🔗 [Singly Linked List](notes/linked-list.md)
+- 🔗 [Singly Linked List](notes/linked-list.md)  
   ↳ [View Implementation](implementations/linked-list/LinkedList.js)
-- 🔗 [Doubly Linked List](notes/doubly-linked-list.md)
+- 🔗 [Doubly Linked List](notes/doubly-linked-list.md)  
   ↳ [View Implementation](implementations/doubly-linked-list/DoublyLinkedList.js)
 
 ---
