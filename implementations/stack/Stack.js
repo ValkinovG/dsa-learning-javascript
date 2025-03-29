@@ -12,6 +12,10 @@ class Stack {
     }
 
     pop() {
-        return this.#list.pop();
+        if (this.#list.isEmpty()) {
+            throw new Error('Can not pop from an empty stack.');
+        }
+
+        return this.#list.pop().value;
     }
 }
