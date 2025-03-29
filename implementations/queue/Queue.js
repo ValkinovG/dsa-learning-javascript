@@ -11,4 +11,12 @@ export class Queue {
     enqueue(value) {
         this.#list.push(value);
     }
+
+    dequeue() {
+        if (this.#list.isEmpty()) {
+            throw new Error('Can not dequeue from an empty queue.');
+        }
+
+        return this.#list.shift().value;
+    }
 }
