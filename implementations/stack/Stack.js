@@ -6,4 +6,8 @@ class Stack {
     constructor() {
         this.#list = new DoublyLinkedList();
     }
+
+    push(value) {
+        this.#list.push(value);
+    }
 }
