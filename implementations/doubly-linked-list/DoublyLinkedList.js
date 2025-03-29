@@ -174,6 +174,27 @@ class DoublyLinkedList {
         return removedDoubleNode;
     }
 
+    reverse() {
+        if (this.#length <= 1) {
+            return;
+        }
+
+        let current = this.#head;
+        this.#tail = current;
+
+        while (current !== null) {
+            const temp = current.next;
+            current.next = current.prev;
+            current.prev = temp;
+
+            if (temp === null) {
+                this.#head = current;
+            }
+
+            current = temp;
+        }
+    }
+
     getFirst() {
         return this.#head;
     }
