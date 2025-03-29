@@ -35,4 +35,8 @@ export class Queue {
     size() {
         return this.#list.size();
     }
+
+    clear() {
+        this.#list.clear();
+    }
 }
