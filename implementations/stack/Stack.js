@@ -26,4 +26,8 @@ class Stack {
 
         return this.#list.getLast().value;
     }
+
+    isEmpty() {
+        return this.#list.isEmpty();
+    }
 }
