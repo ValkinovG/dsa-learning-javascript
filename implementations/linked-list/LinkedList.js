@@ -182,6 +182,21 @@ class LinkedList {
         return null;
     }
 
+    reverse() {
+        let prev = null;
+        let current = this.#head;
+        this.#tail = this.#head;
+
+        while (current) {
+            const next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+
+        this.#head = prev;
+    }
+
     toArray() {
         const values = [];
         let current = this.#head;
