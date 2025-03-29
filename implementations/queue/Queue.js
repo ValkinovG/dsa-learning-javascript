@@ -39,4 +39,16 @@ export class Queue {
     clear() {
         this.#list.clear();
     }
+
+    print() {
+        const values = [];
+        let current = this.#list.getFirst();
+
+        while (current) {
+            values.push(current.value);
+            current = current.next;
+        }
+
+        console.log(`Queue (front → back): [${values.join(' -> ')}]`);
+    }
 }
