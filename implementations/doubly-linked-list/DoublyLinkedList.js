@@ -44,6 +44,10 @@ class DoublyLinkedList {
         this.#length = 0;
     }
 
+    isEmpty() {
+        return this.#length === 0;
+    }
+
     get head() {
         return this.#head;
     }
