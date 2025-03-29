@@ -195,6 +195,19 @@ class DoublyLinkedList {
         }
     }
 
+    find(value) {
+        let temp = this.#head;
+
+        while (temp !== null) {
+            if (temp.value === value) {
+                return temp;
+            }
+            temp = temp.next;
+        }
+
+        return null;
+    }
+
     getFirst() {
         return this.#head;
     }
