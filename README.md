@@ -11,16 +11,18 @@ This repository contains my **notes and JavaScript implementations** from a Data
 ---
 
 ## 📖 Topics Covered
+- ⏱ [Big O Notation](notes/big-o.md)
+- 📚 [JavaScript Arrays](notes/array.md)
 - 📦 [Custom Array Class](notes/custom-array.md)  
   ↳ [View Implementation](implementations/CustomArray.js)
-- 📚 [JavaScript Arrays](notes/array.md)
-- ⏱ [Big O Notation](notes/big-o.md)
+- 🔗 [Singly Linked List](notes/linked-list.md)
+  ↳ [View Implementation](implementations/linked-list/LinkedList.js)
+- 🔗 [Doubly Linked List](notes/doubly-linked-list.md)
+  ↳ [View Implementation](implementations/doubly-linked-list/DoublyLinkedList.js)
 
 ---
 
 ### 🛠 Coming Soon
-- 🔗 Linked List
-- 🔗 Doubly Linked List
 - 📥 Stack
 - 📤 Queue
 - 🔁 Recursion
@@ -45,8 +47,8 @@ _(My learning checklist – updated as I complete each topic)_
 - [x] Big O Notation
 - [x] JavaScript Arrays
 - [x] Custom Array
-- [ ] Linked List
-- [ ] Doubly Linked List
+- [x] Singly Linked List
+- [x] Doubly Linked List
 - [ ] Stack
 - [ ] Queue
 - [ ] Recursion
