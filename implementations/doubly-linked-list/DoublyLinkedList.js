@@ -38,6 +38,12 @@ class DoublyLinkedList {
         return this.#length;
     }
 
+    clear() {
+        this.#head = null;
+        this.#tail = null;
+        this.#length = 0;
+    }
+
     get head() {
         return this.#head;
     }
