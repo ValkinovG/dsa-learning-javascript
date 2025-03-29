@@ -15,7 +15,7 @@ This repository is my personal learning space for mastering **Data Structures & 
 - ⏱ [Big O Notation](notes/big-o.md)
 - 📚 [JavaScript Arrays](notes/array.md)
 - 📦 [Custom Array Class](notes/custom-array.md)  
-  ↳ [View Implementation](implementations/CustomArray.js)
+  ↳ [View Implementation](implementations/custom-array/CustomArray.js)
 - 🔗 [Singly Linked List](notes/linked-list.md)  
   ↳ [View Implementation](implementations/linked-list/LinkedList.js)
 - 🔗 [Doubly Linked List](notes/doubly-linked-list.md)  
