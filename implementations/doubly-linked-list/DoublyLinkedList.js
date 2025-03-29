@@ -87,6 +87,28 @@ class DoublyLinkedList {
         return removedNode;
     }
 
+    get(index) {
+        if (index < 0 || index >= this.#length) {
+            throw new Error('Index is out of bounds.')
+        }
+
+        const mid = Math.floor(this.#length / 2);
+
+        if (index <= mid) {
+            let tempDoublyNode = this.#head;
+            for (let i = 0; i < index; i++) {
+                tempDoublyNode = tempDoublyNode.next;
+            }
+            return tempDoublyNode;
+        } else {
+            let tempDoublyNode = this.#tail;
+            for (let i = this.#length - 1; i > index; i--) {
+                tempDoublyNode = tempDoublyNode.prev;
+            }
+            return tempDoublyNode;
+        }
+    }
+
     getFirst() {
         return this.#head;
     }
