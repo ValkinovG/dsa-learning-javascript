@@ -34,4 +34,8 @@ class Stack {
     size() {
         return this.#list.size();
     }
+
+    clear() {
+        this.#list.clear();
+    }
 }
