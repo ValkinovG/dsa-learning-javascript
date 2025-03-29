@@ -81,4 +81,6 @@ stack.print(); // Stack (top → bottom): [b -> a]
 | Peek      | O(1)            |
 | isEmpty   | O(1)            |
 | size      | O(1)            |
+| clear      | O(1)            |
+| print      | O(n)            |
 
