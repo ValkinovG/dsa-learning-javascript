@@ -221,6 +221,18 @@ class DoublyLinkedList {
         return -1;
     }
 
+    toArray() {
+        const arr = [];
+        let temp = this.#head;
+
+        while (temp !== null) {
+            arr.push(temp.value);
+            temp = temp.next;
+        }
+
+        return arr;
+    }
+
     getFirst() {
         return this.#head;
     }
