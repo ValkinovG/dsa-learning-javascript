@@ -148,6 +148,32 @@ class DoublyLinkedList {
         return true;
     }
 
+    remove(index) {
+        if (index < 0 || index >= this.#length) {
+            throw new Error('Index is out of bounds.')
+        }
+
+        if (index === 0) {
+            return this.shift();
+        }
+
+        if (index === this.#length - 1) {
+            return this.pop();
+        }
+
+        const removedDoubleNode = this.get(index);
+
+        removedDoubleNode.prev.next = removedDoubleNode.next;
+        removedDoubleNode.next.prev = removedDoubleNode.prev;
+
+        removedDoubleNode.next = null;
+        removedDoubleNode.prev = null;
+
+        this.#length--;
+
+        return removedDoubleNode;
+    }
+
     getFirst() {
         return this.#head;
     }
