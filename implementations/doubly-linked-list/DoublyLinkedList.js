@@ -109,6 +109,16 @@ class DoublyLinkedList {
         }
     }
 
+    set(index, value) {
+        try {
+            const node = this.get(index);
+            node.value = value;
+            return true;
+        } catch (err) {
+            return false;
+        }
+    }
+
     getFirst() {
         return this.#head;
     }
